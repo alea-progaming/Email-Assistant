@@ -8253,6 +8253,7 @@ function Fc(t, e) {
     "data-slot": "icon"
   }, [m("path", {
     "fill-rule": "evenodd",
+    d: "M10.53 3.47a.75.75 0 0 0-1.06 0L6.22 6.72a.75.75 0 0 0 1.06 1.06L10 5.06l2.72 2.72a.75.75 0 1 0 1.06-1.06l-3.25-3.25Zm-4.31 9.81 3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 1 0-1.06-1.06L10 14.94l-2.72-2.72a.75.75 0 0 0-1.06 1.06Z",
     "clip-rule": "evenodd"
   })])
 }
@@ -14184,7 +14185,8 @@ const Qv = "zh-CN",
         showEditTonesOverlay: !1,
         outputLanguage: Ae.outputLanguage,
         rewriteHistory: [],
-        actionOptions: {
+        actionOptions: { 
+          //Rewrite: "Rewrite",
           Rewrite: "Rewrite"
         },
         selectedAction: "Rewrite",
@@ -14349,6 +14351,9 @@ const jl = (t, e) => {
   }, null, -1)),
   _x = [vx, wx],
   xx = ["disabled"],
+  jx = {
+        class: "relative mt-1"
+    },
   Ex = {
     class: "flex justify-between mt-3 mr-3"
   },
@@ -14416,12 +14421,15 @@ function Ux(t, e, a, n, i, o) {
     default: K(() => [D(s, {
       class: "block text-sm font-medium leading-6 text-gray-900"
     }, {
+      default: K(() => [_e(" Select your tone ")]),
       _: 1
     }), m("div", yx, [D(r, {
-      class: "w-36 rounded-md border-0 bg-white py-1.5 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6 cursor-default",
+      class: "w-36 rounded-md border-0 bg-white py-1.5 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6",
       readonly: true,
       onChange: e[0] || (e[0] = k => i.query = k.target.value)
-    }), D(u,{
+    }), D(u,  {
+      class: "absolute inset-y-0 right-0 flex items-center rounded-md px-2 focus:outline-none"
+  }, {
       default: K(() => [D(l, {
         class: "h-5 w-5 text-gray-400",
         "aria-hidden": "true"
