@@ -14151,9 +14151,7 @@ const jl = (t, e) => {
   yx = {
     class: "relative mt-2"
   },
-  vx = Qo(() => m("span", {
-    class: "block truncate"
-  }, " + Add Tone ", -1)),
+  vx = Qo(() => m("span")),
   wx = Qo(() => m("span", {
     class: "absolute inset-y-0 right-0 flex items-center pr-4 text-primary-600"
   }, null, -1)),
@@ -14266,13 +14264,7 @@ function Ux(t, e, a, n, i, o) {
           "aria-hidden": "true"
         })], 2)) : Fe("", !0)], 2)]),
         _: 2
-      }, 1032, ["value"]))), 128)), D(c, null, {
-        default: K(() => [m("li", {
-          class: "relative select-none py-2 pl-3 pr-9 text-gray-900 cursor-pointer hover:bg-primary-600 hover:text-white",
-          onClick: e[1] || (e[1] = k => i.showEditTonesOverlay = !0)
-        }, _x)]),
-        _: 1
-      })]),
+      }, 1032, ["value"]))), 128)), D(c, null)]),
       _: 1
     })) : Fe("", !0)])]),
     _: 1
