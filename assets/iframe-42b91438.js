@@ -11603,9 +11603,8 @@ const ky = ge({
     class: "mt-2"
   },
   Jy = m("button", {
-    type: "submit",
-    class: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
-  }, " Add ", -1),
+    type: "submit"
+  }),
   Qy = {
     role: "list",
     class: ""
@@ -11704,22 +11703,12 @@ const ky = ge({
                 as: "h3",
                 class: "text-base font-semibold leading-6 text-gray-900"
               }, {
-                default: K(() => [_e(" Edit Tones ")]),
+                default: K(() => [_e(" Tones ")]),
                 _: 1
               }), m("div", Yy, [m("div", null, [m("form", {
                 id: "login-form",
                 onSubmit: Br(s, ["prevent"])
-              }, [m("div", Zy, [le(m("input", {
-                "onUpdate:modelValue": u[1] || (u[1] = d => n.value = d),
-                type: "text",
-                class: "block w-full rounded-md border-0 py-1.5 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-inset xs:text-xs sm:leading-6 text-sm",
-                placeholder: "eg. Customer Service",
-                "aria-invalid": "true",
-                min: "3",
-                max: "32"
-              }, null, 512), [
-                [Lt, n.value]
-              ])]), m("div", Xy, [Jy, le(m("p", {
+              }, [m("div", Zy), m("div", Xy, [Jy, le(m("p", {
                 id: "sign-in-error",
                 class: "mt-2 text-sm"
               }, be(o.value), 513), [
@@ -11733,9 +11722,7 @@ const ky = ge({
                 key: d,
                 class: "flex items-center justify-between gap-x-6 py-5"
               }, [m("div", e0, [m("div", t0, [m("p", a0, be(d), 1)])]), m("button", {
-                class: "rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-500 hover:text-white hover:ring-red-500",
-                onClick: c => r(d)
-              }, " Delete ", 8, n0)]))), 128))])])])])])])]),
+              }, "  ", 8, n0)]))), 128))])])])])])])]),
               _: 1
             })]),
             _: 1
@@ -14168,9 +14155,8 @@ const jl = (t, e) => {
   },
   zx = ["disabled"],
   Sx = Qo(() => m("label", {
-    class: "ml-2 text-sm text-gray-900",
-    for: "add-signature"
-  }, "Add signature placeholder", -1)),
+    class: "ml-2 text-sm text-gray-900"
+  })),
   Tx = {
     class: "flex items-center text-sm"
   },
@@ -14285,16 +14271,7 @@ function Ux(t, e, a, n, i, o) {
     class: "border-l",
     disabled: i.isRewriting || i.coolingDownTime > 0
   }, {
-    default: K(() => [m("div", jx, [D(u, {
-      class: "items-center rounded-md px-1 py-1.5 focus:outline-none",
-      disabled: i.isRewriting || i.coolingDownTime > 0
-    }, {
-      default: K(() => [D(p, {
-        class: "h-5 w-5 cursor-pointer",
-        "aria-hidden": "true"
-      })]),
-      _: 1
-    }, 8, ["disabled"]), D(h, {
+    default: K(() => [m("div", jx, [D(u), D(h, {
       class: "absolute right-1 mt-0.5 z-10 max-h-60 w-full min-w-fit overflow-auto rounded-md bg-white shadow-lg font-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
     }, {
       default: K(() => [(H(!0), ee(Ge, null, kn(i.actionOptions, (k, w) => (H(), wt(c, {
@@ -14321,16 +14298,7 @@ function Ux(t, e, a, n, i, o) {
       _: 1
     })])]),
     _: 1
-  }, 8, ["modelValue", "disabled"])], 2)]), m("div", Ex, [m("div", Cx, [le(m("input", {
-    id: "add-signature",
-    "onUpdate:modelValue": e[5] || (e[5] = k => i.showSignaturePlaceholder = k),
-    type: "checkbox",
-    name: "add-signature",
-    disabled: i.isRewriting,
-    class: "h-4 w-4 rounded border-primary-300 border-2 text-primary-600 focus:ring-primary-600"
-  }, null, 8, zx), [
-    [Lr, i.showSignaturePlaceholder]
-  ]), Sx]), le(m("div", Tx, [m("button", {
+  }, 8, ["modelValue", "disabled"])], 2)]), m("div", Ex, [m("div", Cx,), le(m("div", Tx, [m("button", {
     class: fe(["text-gray-500", {
       "cursor-not-allowed": o.isFirstRewriteSelected || i.isRewriting
     }]),
@@ -16046,7 +16014,7 @@ const kr = () => {
         type: "button",
         class: "w-full rounded-md border-primary-600 border-2 px-3 py-2 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-700 hover:text-white hover:border-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600",
         onClick: c[2] || (c[2] = h => s.value = !0)
-      }, " Edit Tones ")])]), m("div", null, [m("div", iE, [m("h1", oE, [D(F(Ck), {
+      }, " Tone List ")])]), m("div", null, [m("div", iE, [m("h1", oE, [D(F(Ck), {
         class: "h-5 w-5 text-emerald-500 mr-1"
       }), m("div", wE, [_e(" Every 125 words is considered one email. "), _E, _e(" You have used " + be(F(Ee).LicenseDetails.emailUsedThisMonth * 125) + " words this month. ", 1)])])])]), m("div", xE, [m("div", jE, [m("button",)]), m("div", EE, )]), m("div", CE, [D(ab, {
         "is-open": i.value,
